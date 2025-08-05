@@ -537,29 +537,6 @@
   });
 </script>
 
-<script>
-  const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  const isAndroidWebView = /wv/.test(navigator.userAgent);
-
-  if (!isChrome || isAndroidWebView) {
-    // Tampilkan peringatan
-    alert("⚠️ Untuk tampilan terbaik, silakan buka undangan ini menggunakan Google Chrome.");
-
-    // Atau tampilkan tombol manual
-    const warningDiv = document.createElement("div");
-    warningDiv.style = "background: #fff3cd; padding: 16px; border: 1px solid #ffeeba; color: #856404; font-family: sans-serif; text-align: center;";
-    warningDiv.innerHTML = `
-      <p>⚠️ Tampilan terbaik hanya di Google Chrome.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.android.chrome" target="_blank" style="color: blue; font-weight: bold;">
-        Download / Buka Google Chrome
-      </a>
-    `;
-    document.body.prepend(warningDiv);
-  }
-</script>
-
-
-
         <script src="js/menu.js"></script>
     <script>
     feather.replace();
