@@ -1,0 +1,95 @@
+:root {
+  --white: #fff;
+  --pink: #f14e95;
+  --black: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+.galery {
+  margin-top: 1.7rem;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.fhoto {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.fhoto .judul {
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.fhoto .judul h2 {
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.fhoto .desc p {
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+
+.galery-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.galery-scroll {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  will-change: transform; /* Optimasi performa */
+}
+
+.galery1 {
+  animation: scroll-left 20s linear infinite;
+}
+
+.galery2 {
+  animation: scroll-right 20s linear infinite;
+  margin-top: 2rem;
+}
+
+.galery-scroll img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  pointer-events: none;
+  border: 3px solid var(--black);
+}
+/* Animasi yang lebih presisi */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.75rem)); /* Sesuaikan dengan gap */
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --white: #fff;
+  --pink: #f14e95;
+  --black: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Lock scroll untuk body saat undangan tertutup */
+body.no-scroll {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+/* Sembunyikan semua kecuali hero saat undangan tertutup */
+body.no-scroll .navbar,
+body.no-scroll section:not(.hero),
+body.no-scroll footer {
+  display: none !important;
+}

@@ -1,0 +1,83 @@
+.info {
+  margin-top: 1.7rem;
+  background-color: var(--black);
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.container .judul {
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.container .judul h2 {
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.container desc p {
+  color: #666;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+
+.table table {
+  width: 600px;
+  border-collapse: collapse;
+  background-color: var(--black);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Work Sans", sans-serif;
+}
+
+.table td {
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+
+.table td i {
+  color: var(--pink);
+  margin-right: 0.5rem;
+}
+
+.table tr:first-child td {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: var(--pink);
+  color: white;
+  letter-spacing: 1px;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+  font-size: 0.9rem;
+  color: var(--white);
+  padding-bottom: 1.5rem;
+}
+
+/* Feather icons di tengah */
+.table td i[data-feather] {
+  vertical-align: middle;
+}

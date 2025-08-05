@@ -1,0 +1,40 @@
+:root {
+  --white: #fff;
+  --pink: #f14e95;
+  --black: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+.navbar {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+}
+
+.navbar .navbar-logo {
+  font-family: "Sacramento";
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-nav a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--pink);
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-extra {
+  display: none;
+}

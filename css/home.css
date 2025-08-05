@@ -1,0 +1,174 @@
+.home {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+}
+
+.isiUndangan {
+  display: block;
+  margin-top: -7.3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.isiUndangan .judul h2 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.isiUndangan .judul h3 {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.isiUndangan .ket {
+  /* padding: 0 17rem; */
+  margin-bottom: 1.7rem;
+}
+
+.isiUndangan .ket p {
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 1.1rem;
+}
+
+.isiUndangan .lakilaki {
+  display: block;
+  position: absolute;
+  margin-top: 4rem;
+  margin-left: -35.8rem;
+}
+
+.isiUndangan .perempuan {
+  display: block;
+  text-align: left;
+  margin-top: 5rem;
+  margin-left: 54.5rem;
+}
+
+.isiUndangan .lakilaki .nama {
+  color: var(--pink);
+  font-size: 1.5rem;
+  font-family: "Sacramento";
+  margin-left: 52rem;
+}
+
+.isiUndangan .perempuan .nama {
+  color: var(--pink);
+  font-size: 1.5rem;
+  font-family: "Sacramento";
+}
+
+.isiUndangan .lakilaki .desk {
+  margin-left: 40rem;
+  margin-bottom: 1rem;
+  max-width: 400px;
+  text-align: right;
+}
+
+.isiUndangan .perempuan .desk {
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+.isiUndangan .perempuan .desk p {
+  margin-left: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.isiUndangan .lakilaki .desk p {
+  font-family: "Work Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 1.1rem;
+}
+
+.isiUndangan .lakilaki .ortu {
+  margin-left: 18rem;
+}
+
+.isiUndangan .lakilaki .ortu {
+  font-family: "Work Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.isiUndangan .perempuan .ortu {
+  font-family: "Work Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  text-align: left;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+.isiUndangan .lakilaki .fhoto-lk img {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  top: 1rem;
+  left: 72.5rem;
+  transform: translateX(-50%);
+  border: 3px solid var(--black);
+  filter: drop-shadow(0px 0px 50px var(--pink));
+}
+
+.isiUndangan .perempuan .fhoto-lk img {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  top: 68.5rem;
+  left: 48.5rem;
+  transform: translateX(-50%);
+  border: 3px solid var(--black);
+  filter: drop-shadow(0px 0px 50px var(--pink));
+}
+
+.isiUndangan .hati {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: -8rem;
+  z-index: 100;
+}
+
+.isiUndangan .hati::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 35px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 3px solid var(--pink);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink), 0 0 50px var(--pink),
+    0 0 100px var(--pink), 0 0 200px var(--pink);
+  filter: drop-shadow(0px 0px 20px var(--pink));
+}
+
+.isiUndangan .hati img {
+  position: absolute;
+  top: 52%;
+  left: 52.5%;
+  width: 380px; /* Sesuaikan ukuran hati */
+  height: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
